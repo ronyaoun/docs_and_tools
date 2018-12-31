@@ -1,6 +1,17 @@
 git branch branchname
 git checkout branchname
+git log -10     will only show the 10 most recent commits.
+git log --oneline   is a great way to view commit history by displaying the first seven characters of the SHA-1 hash and commit message of the commits on the current branch.
+git log --oneline --graph   presents commit history in a ASCII graph displaying the different branches in the repository and their commits.
+git log --oneline --graph --decorate    displays the same ASCII graph that is displayed using the --graph modifier, but also includes the branch name(s) for the different commits being displayed.
+git diff hash# hash#    compare two commits eg: git diff 4e3dc9b 0cd75d4
+git show hash#  display the details of that specific commit
+git revert  creates a new commit with changes that are the opposite of the commit that is functionally being 'undone'. Should only use if commit has been pushed to remote.
+git commit --amend  Use to make a modification to the last commit message you made. Don't use if you have already pushed your commits to remote
+git reset   See url below for more info
 
+
+https://trailhead.salesforce.com/content/learn/modules/git-and-git-hub-basics/work-with-your-history-in-git
 
 Handling merge conflicts
 https://trailhead.salesforce.com/content/learn/modules/git-and-git-hub-basics/work-with-teams-in-git-hub
