@@ -1,0 +1,70 @@
+sfdx force --help	(All the available topics)
+sfdx force:doc:commands:list	(All available commands)
+
+To make a dev hub connection and authorize sfdx on command line
+sfdx force:auth:web:login -d -a DevHub
+
+To open dev hub org
+sfdx force:org:open -u DevHub
+
+To create a scratch org
+sfdx force:org:create -s -f config.json-filelocation -a alias
+example: sfdx force:org:create -s -f config/project-scratch-def.json -a dreamhouse-org
+
+To see list of scratch orgs
+sfdx force:org:list
+
+Display the org info
+sfdx force:org:display -u alias
+
+Sets a password to the org
+sfdx force:user:password:generate -u alias
+
+To see the password
+sfdx force:user:display -u username/OR/alias  OR  sfdx force:org:display -u alias
+
+To open a scratch org
+sfdx force:org:open -u alias
+
+To delete a scratch org
+sfdx force:org:delete -u aliass
+
+To log out of an org, use force:auth:logout. This example uses the alias my-hub-org to log out.
+sfdx force:auth:logout --targetusername my-hub-org
+
+To log out of all your orgs, including scratch orgs, use the --all parameter.
+sfdx force:auth:logout --all
+
+To create a project
+sfdx force:project:create --projectname mytest
+
+Create apex file
+sfdx force:apex:class:create -n nameofapexfile(without .cls) -d force-app/main/default/classes
+
+Create lightning component
+sfdx force:lightning:component:create -n nameofcmpfile(without .cmp) -d force-app/main/default/aura
+
+Send your changes to the scratch org
+sfdx force:source:push
+
+Assigns a permission set
+sfdx force:user:permset:assign -n NameofPermissionSet -u NameOfScratchOrg
+See: https://trailhead.salesforce.com/content/learn/modules/sfdx_app_dev/sfdx_app_dev_create_app?trail_id=sfdx_get_started
+
+Retrieve a package from org to local
+sfdx force:mdapi:retrieve -s -r ./directoryname -p nameOfPackage -u Alias -w 10
+
+Other commands
+sfdx force:user:list
+
+More info on
+https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm
+
+
+
+****DEPLOY****
+mkdir mdapioutput
+sfdx force:source:convert -d mdapioutput/	// Convert your source for Metadata API
+sfdx force:mdapi:deploy -d mdapioutput/ -u alias -w 100		// Deploy it to the environment
+sfdx force:user:permset:assign -n nameofPackage -u alias	// assign permissions if any 
+sfdx force:org:open -u alias		// Run your tests and interact with the app:
