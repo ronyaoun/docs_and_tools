@@ -1,0 +1,6 @@
+git branch branchname
+git checkout branchname
+
+
+Handling merge conflicts
+https://trailhead.salesforce.com/content/learn/modules/git-and-git-hub-basics/work-with-teams-in-git-hub
