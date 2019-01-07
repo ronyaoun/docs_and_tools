@@ -1,0 +1,39 @@
+Trigger AccountTrigger on Account (after delete, after insert, after undelete, after update, before delete, before insert, before update) {
+	AccountTriggerHandler handler = new AccountTriggerHandler(trigger.isExecuting, trigger.size);
+	//
+	// Before Insert - New record(s) being created
+	// 
+	if (trigger.isInsert && trigger.isBefore) {
+		handler.OnBeforeInsert(trigger.new);
+	//
+	// After Insert - New record(s) being created 
+	// 
+	} if (trigger.isInsert && trigger.isAfter) {
+		handler.OnAfterInsert(trigger.newMap);
+	//
+	// Before Update - Existing record(s) being saved 
+	// 
+	} if (trigger.isUpdate && trigger.isBefore) {
+		handler.OnBeforeUpdate(trigger.oldMap, trigger.newMap);
+	//
+	// After Update - Existing record(s) being saved 
+	// 
+	} if (trigger.isUpdate && trigger.isAfter) {
+		handler.OnAfterUpdate(trigger.oldMap, trigger.newMap);
+	//
+	// Before Delete - Existing record(s) being deleted 
+	// 
+	} if (trigger.isDelete && trigger.isBefore) {
+		handler.OnBeforeDelete(trigger.oldMap);
+	//
+	// After Delete - Existing record(s) being deleted 
+	// 
+	} if (trigger.isDelete && trigger.isAfter) {
+		handler.OnAfterDelete(trigger.oldMap);
+	//
+	// After Undelete - Existing record(s) being undeleted 
+	// 
+	} if (trigger.isUnDelete && trigger.isAfter) {
+		handler.OnUnDelete(trigger.new);
+	}
+}
