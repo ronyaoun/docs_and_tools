@@ -15,3 +15,6 @@ https://trailhead.salesforce.com/content/learn/modules/git-and-git-hub-basics/wo
 
 Handling merge conflicts
 https://trailhead.salesforce.com/content/learn/modules/git-and-git-hub-basics/work-with-teams-in-git-hub
+
+git push origin --delete the_remote_branch      To delete a branch
+git branch -d the_local_branch      To delete a local branch
