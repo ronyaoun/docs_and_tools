@@ -18,3 +18,4 @@ https://trailhead.salesforce.com/content/learn/modules/git-and-git-hub-basics/wo
 
 git push origin --delete the_remote_branch      To delete a branch
 git branch -d the_local_branch      To delete a local branch
+git fetch       To sync new branches information on remote - Does not update any code
