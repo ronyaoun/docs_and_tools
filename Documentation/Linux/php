@@ -1,0 +1,9 @@
+** Install **
+sudo apt install php libapache2-mod-php php-mysql php-xml php-mysql php-curl php-gd php-imagick php-imap php-recode php-tidy php-xmlrpc
+sudo apt install zip unzip php7.2-zip
+sudo apt install php7.2-mbstring
+
+** Remove **
+sudo apt-get purge 'php*'
+sudo apt autoremove
+sudo apt autoclean

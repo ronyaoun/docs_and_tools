@@ -1,0 +1,8 @@
+https://thelinuxcode.com/how-to-install-upnp-gerbera-media-server-on-linux/ 
+sudo systemctl restart gerbera.service
+sudo systemctl start gerbera.service
+sudo systemctl enable gerbera.service
+sudo systemctl status gerbera.service
+sudo systemctl stop gerbera.service
+
+

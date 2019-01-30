@@ -1,0 +1,3 @@
+apt list --installed (list all installed apps)
+sudo apt-get purge <package-name> (remove app)
+history | grep install (get all history command with install)

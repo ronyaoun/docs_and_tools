@@ -1,0 +1,6 @@
+** Install **
+sudo apt install apache2
+
+** Remove **
+sudo apt purge apache2
+sudo apt autoremove

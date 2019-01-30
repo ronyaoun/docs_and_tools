@@ -1,0 +1,5 @@
+composer create-project drupal-composer/drupal-project:8.x-dev my_project --stability dev --no-interaction
+sudo chown -R www-data:www-data /var/www/html/*
+
+** To add modules ***
+composer require drupal/ctools

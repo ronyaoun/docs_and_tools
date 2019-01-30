@@ -1,0 +1,19 @@
+** Install **
+
+sudo apt install mysql-server mysql-client
+sudo mysql_secure_installation
+
+** For drupal database **
+sudo mysql -u root -p
+CREATE DATABASE drupal;
+CREATE USER drupaluser@localhost IDENTIFIED BY 'new_password_here';
+GRANT ALL ON drupal.* TO drupaluser@localhost;
+FLUSH PRIVILEGES;
+exit
+
+** Remove **
+sudo apt remove --purge mysql*
+sudo apt purge mysql*
+sudo apt autoremove
+sudo apt autoclean
+sudo apt remove dbconfig-mysql

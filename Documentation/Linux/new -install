@@ -1,0 +1,13 @@
+** Where to install **
+/usr/local for stuff which is "system-wide"—i.e. /usr/local tends to be in a distro's default $PATH, and follows a standard UNIX directory hierarchy with /usr/local/bin, /usr/local/lib, etc.
+
+/opt for stuff you don't trust to make system-wide, with per-app prefixes—i.e. /opt/firefox-3.6.8, /opt/mono-2.6.7, and so on. Stuff in here requires more careful management, but is also less likely to break your system—and is easier to remove since you just delete the folder and it's gone.
+
+** Change Timezone ** 
+cp /usr/share/zoneinfo/EST5DT /etc/localtime   
+
+** Laptop - Turn off screen when lid closed **
+sudo vi /etc/systemd/logind.conf
+add/uncomment HandleLidSwitch=ignore
+sudo systemctl restart systemd-logind.service
+

@@ -1,0 +1,10 @@
+sudo apt update :
+updates the list of available packages and their versions, but it does not install or upgrade any packages.
+
+sudo apt upgrade :
+actually installs newer versions of the packages you have. After updating the lists, the package manager knows about available updates for the software you have installed.
+
+sudo apt dist-upgrade :
+Will not upgrade to a new Ubuntu release. It will just install available updates for the Ubuntu release you already have installed.
+
+sudo apt update && sudo apt dist-upgrade && sudo apt autoremove
