@@ -1,0 +1,19 @@
+Clean Scratch Orgs
+--
+Select Id, SignupEmail, DeletedDate FROM ScratchOrgInfo WHERE Status = 'Deleted' 
+SELECT COUNT() FROM ScratchOrgInfo WHERE Status = 'Deleted' 
+delete [select id from ScratchOrgInfo WHERE Status = 'Deleted'];
+
+
+
+*** DEBUG ***
+List<ScratchOrgInfo> soResult = [SELECT id FROM ScratchOrgInfo WHERE id = '2SR0b000000Xbdg'];
+
+System.Debug('SOQL Returned ' + soResult.size() + ' Scratch');
+
+if (soResult.size() > 0){
+	System.Debug('Entering');
+	delete contactResult;
+} else {
+	System.Debug('NOT Entering');
+}
