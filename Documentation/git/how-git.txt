@@ -1,3 +1,6 @@
+git init
+git remote add origin <github ssh url>
+
 git branch branchname
 git checkout branchname
 git log -10     will only show the 10 most recent commits.
