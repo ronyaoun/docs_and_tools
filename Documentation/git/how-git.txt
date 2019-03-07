@@ -20,7 +20,7 @@ Handling merge conflicts
 https://trailhead.salesforce.com/content/learn/modules/git-and-git-hub-basics/work-with-teams-in-git-hub
 
 git push origin --delete the_remote_branch      To delete a branch
-git push origin :the_remote_branch              To delete a branch
+git push origin :wthe_remote_branch              To delete a branch
 git branch -d the_local_branch      To delete a local branch
 git fetch       To sync new branches information on remote - Does not update any code
 git checkout tags/<tag_name> -b <branch_name>       Checkout tags and create a new branch to retain commits you create 

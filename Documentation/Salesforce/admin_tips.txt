@@ -5,6 +5,13 @@ SELECT COUNT() FROM ScratchOrgInfo WHERE Status = 'Deleted'
 delete [select id from ScratchOrgInfo WHERE Status = 'Deleted'];
 
 
+select count(id) from Story_Result__c  // GET COUNT OF RECORDS
+
+*** Delete records (has limit) ***
+// To Delete mass records, use data loader
+List<Story_Result__c> SobjLst = [select id from Story_Result__c limit 10000];
+delete SobjLst;
+
 
 *** DEBUG ***
 List<ScratchOrgInfo> soResult = [SELECT id FROM ScratchOrgInfo WHERE id = '2SR0b000000Xbdg'];

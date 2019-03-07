@@ -1,0 +1,13 @@
+git --version
+
+*** CONFIG ***
+git config -l --show-origin  // To list config info 
+git config --global user.name "First Last"
+git config --global user.email "you@email.com"
+git config --global core.autocrlf true
+git config --global core.editor "nano"  // To change editor
+
+
+*** TRACE ***
+GIT_TRACE=1 git pull origin master  // normal trace
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 git pull origin master  // Detailed Trace
