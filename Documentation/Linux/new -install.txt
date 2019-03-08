@@ -11,3 +11,11 @@ sudo vi /etc/systemd/logind.conf
 add/uncomment HandleLidSwitch=ignore
 sudo systemctl restart systemd-logind.service
 
+** Install SSH **
+https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl status ssh
+ip a
+
+
