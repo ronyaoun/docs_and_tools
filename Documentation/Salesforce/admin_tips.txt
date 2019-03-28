@@ -24,3 +24,10 @@ if (soResult.size() > 0){
 } else {
 	System.Debug('NOT Entering');
 }
+
+***  Adding Users Dataloader ***
+localesidkey	en_US
+emailencodingkey	UTF-8
+Languagelocalekey	en_US
+ProfileId	00e1h000000QJdyAAG
+			
