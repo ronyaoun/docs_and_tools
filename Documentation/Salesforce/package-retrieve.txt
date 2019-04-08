@@ -1,0 +1,3 @@
+dxmr -s -r import -p rony_pack -u prod
+unzip package
+dxmc -r import
