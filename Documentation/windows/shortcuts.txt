@@ -1,0 +1,23 @@
+WIN + CTRL + D  				// Open new virtual desktop
+WIN + CTRL + Arrow left / Arrow right		// Switch between virtual desktops
+WIN + CTRL + F4 				// Close virtual desktop
+
+WIN + M 					// Minimize all windows and reveal desktop
+WIN + ,						// Peak at desktop
+WIN + 1-9					// Opens app on task bar from 1 to 9
+WIN + Left arrow / Right arrow			// Tile two apps next to each other
+CTRL + ALT + TAB				// Show all apps running
+WIN + TAB					// Allow you to view all app and select
+ALT + TAB					// Switch between apps
+WIN + L 					// Lock desktop
+CTRL + SHIFT + ESC				// Bring up task manager
+WIN + E						// Open File explorer
+WIN + +/-					// Zoom in / out
+WIN + PrtScn					// Take screen capture and save in pictures folder
+WIN + A						// Open windows functions settings
+WIN + I						// Open windows settings
+WIN + C						// Talk to Cortana
+WIN + G						// Start recording gaming
+WIN + ALT + R					// Stop recording gaming
+WIN + ALT + B					// Start streaming
+
