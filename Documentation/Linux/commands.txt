@@ -1,0 +1,6 @@
+apt list --installed (list all installed apps)
+sudo apt-get purge <package-name> (remove app)
+history | grep install (get all history command with install)
+find /path/to -regex ".*\.\(jpg\|gif\|png\|jpeg\)"  	-- Find all files with extension .jpg .gif etc..
+source ~/.bashrc  -- to activate a change in bash
+diff -ur force-app/common/default/objects/ objects/  | grep -E "^\+"		//2 directories

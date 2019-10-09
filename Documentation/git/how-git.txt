@@ -1,6 +1,7 @@
 git init
 git remote add origin <github ssh url>
 
+
 git branch branchname
 git checkout branchname
 git log -10     will only show the 10 most recent commits.
@@ -20,8 +21,26 @@ Handling merge conflicts
 https://trailhead.salesforce.com/content/learn/modules/git-and-git-hub-basics/work-with-teams-in-git-hub
 
 git push origin --delete the_remote_branch      To delete a branch
-git push origin :wthe_remote_branch              To delete a branch
+git push origin :the_remote_branch              To delete a branch
 git branch -d the_local_branch      To delete a local branch
 git fetch       To sync new branches information on remote - Does not update any code
-git checkout tags/<tag_name> -b <branch_name>       Checkout tags and create a new branch to retain commits you create 
-git checkout tags/<tag_name>            Checkout tag only
+
+git ls-remote --heads origin  // List all branches
+
+git stash			// Discard all local changes, but save them for possible re-use later:
+git checkout -- <file>		// Discarding local changes (permanently) to a file:
+git reset --hard		// Discard all local changes to all files permanently:
+
+git rm --cached .vscode/settings.json  // Clears cache where files are appearing modified although in gitignore
+
+git diff branch_1..branch_2   // That will produce the diff between the tips of the two branches
+git diff branch_1...branch_2 // Will produce the diff from their common ancestor
+
+*** TAGS **
+git tag <tagname> // to create a tag
+git push origin --tags   // Push tags
+git checkout tags/<tag_name> -b <branch_name>  	// Checkout tags and create a new branch to retain commits you create 
+git checkout tags/<tag_name>            	// Checkout tag only
+git tag -d 12345 				// delete local tag '12345'
+git push origin :refs/tags/12345		// delete remote tag '12345' (eg, GitHub version too)
+git push --delete origin tagName		// alternative approach

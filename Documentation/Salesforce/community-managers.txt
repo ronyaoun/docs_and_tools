@@ -1,0 +1,15 @@
+Question: If Manage/Workspaces link is missing in communities?
+
+Answer: Add yourself as a Community member means your profile is not listed as a Member then the new Manage Link won’t be visible.If you aren’t a member of a community, you can’t access Community Management to update administration settings, including membership. To achieve this we have to follow some steps:
+
+Get the networkId for your community.
+From Setup, enter All Communities in the Quick Find box, select All Communities, and then right-click your community URL and select Inspect. The data-networkIdproperty provides your networkId.
+
+Get the profileId or permissionsetId you want to add.
+From Setup, enter Profiles in the Quick Find box, then select Profiles or Permission Sets. Click on the profile or permission set that you want to add. The ID is the last part of the URL.
+
+Create a .csv file with columns for networkId and parentId. For parentId,list the profileId or permissionsetId you want to add.
+
+Open Data Loader and select the Network Member Group object. Specify the location of the .csv file you created and complete the Data Loader steps.
+
+Once you have successfully added members using Data Loader, the members will be able to access Community Management from the Manage link on the All Communities page in Setup.

@@ -30,4 +30,10 @@ localesidkey	en_US
 emailencodingkey	UTF-8
 Languagelocalekey	en_US
 ProfileId	00e1h000000QJdyAAG
+
+*** What Release is my box instance on ***
+go to https://status.salesforce.com/instances/ + box#
+You can find box # by going to the box, under sites.  Box# can be found in there box#.force.com
+
+
 			

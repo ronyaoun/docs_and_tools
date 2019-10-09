@@ -1,4 +1,0 @@
-** how to build
-click branch
-click develop
-build now

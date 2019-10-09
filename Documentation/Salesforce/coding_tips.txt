@@ -1,1 +1,10 @@
 system.debug('' + x );  //to debug
+
+---- Format A ----
+List<Object__c> toDel = new List<Object__c>();
+toDel = [select id from Object__c];
+
+delete toDel;
+
+---- Format B ----
+delete [select id from Object__c];

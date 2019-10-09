@@ -1,0 +1,25 @@
+Create unlocked package
+dxpkc -n userstory -d "User Story Package" -t Unlocked -r UserStory -e -v prod
+
+Create package version
+dxpkvc -p userstory -d UserStory -k test1234 -w 10 -v prod
+dxpkvc -p 0Ho0b000000TN8LCAW -x -w 10 -v prod -n 0.0.1.1
+
+Install package
+dxpki -w 10 -b 10 -p packagename@version -k test1234 -u sit
+
+Promote package
+dxpkvp -p packagename@1.0.0-1 -v prod
+
+Rename a package
+sfdx force:package:update -n z-old6 -d "To be deleted" -p 0Ho0b000000TN65CAG
+
+View how many package available left for today
+sfdx force:limits:api:display
+
+Current packages:
+dxpki -w 10 -b 10 -p 04t1N000000Y4Gy -r -u  //Twilio
+dxpki -p 04t0b000001XvLAAA0 -k test1234 -u  /COE
+dxpki -p 04t0b000001XvL5AAK -u // Common
+
+
