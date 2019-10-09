@@ -1,2 +1,0 @@
-Manage Salesforce Environments 
-https://www.salesforce.com/content/dam/web/en_us/www/documents/accelerators/how-to-platform-manage-salesforce-environments.pdf
